@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 
 const NavItem = ({ href, children }: { href: string; children: ReactNode }) => (
   <Link href={href}>
-    <a>
-      <span className="inline-block px-4 py-4 hover:text-white hover:bg-primary-800">
+    <a className="group">
+      <span className="inline-block px-4 py-4 hover:text-white hover:bg-primary-800 group-focus:text-white group-focus:bg-primary-800">
         {children}
       </span>
     </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between">
       <div>
-        <NavItem href={"/"}>bitlikethis</NavItem>
+        <NavItem href={"/"}><b>bitlikethis</b></NavItem>
       </div>
       <div>
         <NavItem href={"/"}>home</NavItem>
