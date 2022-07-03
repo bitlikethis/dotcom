@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const Contact: NextPage = () => {
+const Blog: NextPage = () => {
   return (
     <div>
       <main className="text-2xl">about</main>
@@ -8,5 +8,5 @@ const Contact: NextPage = () => {
   );
 };
 
-export default Contact;
+export default Blog;
 
