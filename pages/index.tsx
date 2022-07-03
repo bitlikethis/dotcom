@@ -1,4 +1,5 @@
 import Container from "components/Container";
+import Prose from "components/Prose";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -11,8 +12,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="text-2xl">
-        <Container>bitlikethis</Container>
+      <main>
+        <Container>
+          <Prose>
+            <h1>bit like this</h1>
+            <pre>
+              <code>const something = 'something';</code>
+            </pre>
+            <code>const something = 'something';</code>
+          </Prose>
+        </Container>
       </main>
     </div>
   );
