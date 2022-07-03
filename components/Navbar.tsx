@@ -16,11 +16,11 @@ const NavItem = ({
   const isActive = route === href;
   return (
     <Link href={href}>
-      <a className="group">
+      <a>
         <span
           className={`inline-block px-4 py-4 ${
             showActive && isActive ? "text-white bg-primary-800" : ""
-          } hover:text-white hover:bg-primary-800 group-focus:text-white group-focus:bg-primary-800`}
+          } hover:text-white hover:bg-primary-800`}
         >
           {children}
         </span>
