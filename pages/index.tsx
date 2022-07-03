@@ -19,9 +19,11 @@ const Home: NextPage = () => {
             <h1>Home</h1>
             <p>
               Hello! Welcome to{" "}
-              <a>
-                <b>bit like this</b>
-              </a>
+              <Link href="/">
+                <a>
+                  <b>bit like this</b>
+                </a>
+              </Link>
               . My name is Corey, and I like to try new things. I have a
               curiosity for programming, tech, and art. Take a look at my latest{" "}
               <Link href="/projects">
