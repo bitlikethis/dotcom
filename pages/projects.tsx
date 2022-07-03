@@ -10,7 +10,7 @@ const Projects: NextPage = () => {
           <Prose>
             <h1>Projects</h1>
             <p>
-              Hello! Welcome to <b>bit like this</b>.
+              Coming soon...
             </p>
           </Prose>
         </Container>

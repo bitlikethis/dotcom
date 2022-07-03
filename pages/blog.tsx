@@ -9,6 +9,7 @@ const Blog: NextPage = () => {
         <Container>
           <Prose>
             <h1>Blog</h1>
+            <p>Coming soon...</p>
           </Prose>
         </Container>
       </main>
