@@ -22,7 +22,7 @@ const Navbar = () => {
         <NavItem href={"/projects"}>
           <a>projects</a>
         </NavItem>
-        <NavItem href={"/contact"}>
+        <NavItem href={"/blog"}>
           <a>contact</a>
         </NavItem>
         <NavItem href={"github"}>
