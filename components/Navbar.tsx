@@ -12,8 +12,9 @@ const NavItem = ({
   children: ReactNode;
   showActive: boolean;
 }) => {
-  const { route } = useRouter();
-  const isActive = route === href;
+  const { route, pathname } = useRouter();
+  const isActive =
+    href === "/" ? href === route : route.startsWith(href);
   return (
     <Link href={href}>
       <a>
