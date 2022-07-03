@@ -1,12 +1,19 @@
+import Container from "components/Container";
+import Prose from "components/Prose";
 import type { NextPage } from "next";
 
 const Blog: NextPage = () => {
   return (
     <div>
-      <main className="text-2xl">blog</main>
+      <main className="text-2xl">
+        <Container>
+          <Prose>
+            <h1>Blog</h1>
+          </Prose>
+        </Container>
+      </main>
     </div>
   );
 };
 
 export default Blog;
-

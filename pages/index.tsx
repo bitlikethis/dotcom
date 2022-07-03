@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>bitlikethis</title>
+        <title>bit like this</title>
         <meta name="description" content="bit like this dot com" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -15,11 +15,8 @@ const Home: NextPage = () => {
       <main>
         <Container>
           <Prose>
-            <h1>bit like this</h1>
-            <pre>
-              <code>const something = 'something';</code>
-            </pre>
-            <code>const something = 'something';</code>
+            <h1>Home</h1>
+            <p>Hello! Welcome to <b>bit like this</b>.</p>
           </Prose>
         </Container>
       </main>
