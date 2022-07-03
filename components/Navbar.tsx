@@ -38,7 +38,8 @@ const Navbar = () => {
         </NavItem>
         <NavItem href={"/"} showActive>
           home
-        </NavItem><NavItem href={"/projects"} showActive>
+        </NavItem>
+        <NavItem href={"/projects"} showActive>
           projects
         </NavItem>
         <NavItem href={"/blog"} showActive>
