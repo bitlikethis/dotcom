@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between">
       <div>
-        <NavItem href={"/"}>bit like this</NavItem>
+        <NavItem href={"/"}>bitlikethis</NavItem>
       </div>
       <div>
         <NavItem href={"/"}>home</NavItem>
