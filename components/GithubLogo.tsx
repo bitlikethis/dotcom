@@ -1,5 +1,5 @@
 const GithubLogo = () => (
-  <svg width="24" height="24" fill="currentColor">
+  <svg width="24" height="24" fill="currentColor" className="scale-125">
     <path
       fillRule="evenodd"
       clipRule="evenodd"
