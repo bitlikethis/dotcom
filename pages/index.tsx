@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>bit like this</title>
         <meta name="description" content="bit like this dot com" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bitlikethis.ico" />
       </Head>
 
       <main>
