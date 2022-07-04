@@ -6,22 +6,19 @@ import GithubLogo from "./GithubLogo";
 const NavItem = ({
   href,
   children,
-  showActive = false,
+  isActive = false,
 }: {
   href: string;
   children: ReactNode;
-  showActive: boolean;
+  isActive?: boolean;
 }) => {
-  const { route, pathname } = useRouter();
-  const isActive =
-    href === "/" ? href === route : route.startsWith(href);
   return (
     <Link href={href}>
       <a>
         <span
-          className={`inline-block px-4 py-4 ${
-            showActive && isActive ? "text-white bg-primary-800" : ""
-          } hover:text-white hover:bg-primary-800`}
+          className={`inline-block p-4 hover:text-white hover:bg-primary-800 ${
+            isActive ? "text-white bg-primary-800" : ""
+          }`}
         >
           {children}
         </span>
@@ -31,24 +28,30 @@ const NavItem = ({
 };
 
 const Navbar = () => {
+  const { route, pathname } = useRouter();
+
   return (
     <nav className="flex justify-between">
       <div>
-        <NavItem href={"/"} showActive={false}>
-          <b>bit like this</b>
-        </NavItem>
-        <NavItem href={"/"} showActive>
+        <Link href="/">
+          <a>
+            <span className="inline-block p-4 text-white bg-primary-900">
+              <b>bit like this</b>
+            </span>
+          </a>
+        </Link>
+        <NavItem href="/" isActive={route === "/"}>
           home
         </NavItem>
-        <NavItem href={"/projects"} showActive>
+        <NavItem href="/projects" isActive={route.startsWith("/projects")}>
           projects
         </NavItem>
-        <NavItem href={"/blog"} showActive>
+        <NavItem href="/blog" isActive={route.startsWith("/blog")}>
           blog
         </NavItem>
       </div>
       <div className="flex">
-        <NavItem href={"https://github.com/bitlikethis"} showActive>
+        <NavItem href={"https://github.com/bitlikethis"}>
           <GithubLogo />
         </NavItem>
       </div>
