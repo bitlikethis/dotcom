@@ -28,7 +28,7 @@ const NavItem = ({
 };
 
 const Navbar = () => {
-  const { route, pathname } = useRouter();
+  const { route } = useRouter();
 
   return (
     <nav className="flex justify-between">
