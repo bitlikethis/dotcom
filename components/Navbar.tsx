@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
+import BitLikeThisLogo from "./BitLikeThisLogo";
 import GithubLogo from "./GithubLogo";
 
 const NavItem = ({
@@ -35,7 +36,8 @@ const Navbar = () => {
       <div>
         <Link href="/">
           <a>
-            <span className="inline-block p-4 text-white bg-primary-900">
+            <span className="inline-block p-4 space-x-4 text-white fill-white bg-primary-900">
+              <BitLikeThisLogo className="inline w-6 h-6 -mt-1 fill-white" />
               <b>bit like this</b>
             </span>
           </a>
