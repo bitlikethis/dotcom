@@ -32,7 +32,7 @@ const Navbar = () => {
   const { route } = useRouter();
 
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between mb-8">
       <div>
         <Link href="/">
           <a>
